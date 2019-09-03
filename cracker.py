@@ -45,6 +45,7 @@ def proper_prediction(current, steal, no_steal):
                     check = False
                     break
         if check:
+            print(pattern)
             return ["steal", "100"]
     return ["N/A", "0"]
 
@@ -57,6 +58,7 @@ def guess_prediction(current, steal):
                 check = False
                 break
         if check:
+            print(pattern)
             return ["steal", "50"]
     return ["no steal", "75"]
 
